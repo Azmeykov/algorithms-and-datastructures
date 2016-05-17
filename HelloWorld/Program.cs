@@ -58,6 +58,9 @@ namespace HelloWorld
             for (int i = -10; i < 10; i++)
             {
                 Console.WriteLine("Y = " + y(i));
+                Console.WriteLine("Y1 = " + y(i));
+                Console.WriteLine("Y2 = " + y(i));
+                Console.WriteLine("Y3 = " + y(i));
             }
             Console.ReadKey();
         }
