@@ -8,6 +8,8 @@ namespace HelloWorld
 {
     class Program
     {
+        private static int i;
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -57,10 +59,10 @@ namespace HelloWorld
             //циклы
             for (int i = -10; i < 10; i++)
             {
-                Console.WriteLine("Y = " + y(i));
-                Console.WriteLine("Y1 = " + y(i));
-                Console.WriteLine("Y2 = " + y(i));
-                Console.WriteLine("Y3 = " + y(i));
+                Console.WriteLine("Y " + i + " = " + y(i));
+                Console.WriteLine("Y1 " + i + " = " + y(i));
+                Console.WriteLine("Y2 " + i + " = " + y(i));
+                Console.WriteLine("Y3 " + i + " = " + y(i));
             }
             Console.ReadKey();
         }
@@ -81,6 +83,8 @@ namespace HelloWorld
         {
             return -8 * x + 1;
         }
+        
+        
 
     }
 }
