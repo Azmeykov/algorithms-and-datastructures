@@ -47,12 +47,12 @@ namespace HelloWorld
             //вызов функции
             c = y(4);   
             Console.WriteLine("Y_const = " + c);
-            c = y1(1);
-            Console.WriteLine("Y_const = " + c);
-            c = y2(2);
-            Console.WriteLine("Y_const = " + c);
-            c = y3(3);
-            Console.WriteLine("Y_const = " + c);
+            c = y1(4);
+            Console.WriteLine("Y1_const = " + c);
+            c = y2(4);
+            Console.WriteLine("Y2_const = " + c);
+            c = y3(4);
+            Console.WriteLine("Y3_const = " + c);
 
             //циклы
             for (int i = -10; i < 10; i++)
