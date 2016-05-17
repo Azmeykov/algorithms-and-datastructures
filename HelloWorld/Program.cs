@@ -20,15 +20,18 @@ namespace HelloWorld
             //сложить а и b
             //сохранить результат в третью переменную
             //вывести результат на экран
-            int a, b;
-            string buff = Console.ReadLine();
-            a = Convert.ToInt16(buff);
-            Console.WriteLine("a: " + a);
+            int a, b, d;  // Объявление двух переменных
+            string buff = Console.ReadLine(); // Создание переменной buff 
+                                              // и передача ей значения введенного из консоли
+            a = Convert.ToInt16(buff); // Конвертирование строки в инт переменную
+            Console.WriteLine("a: " + a); // Вывод значения в консоль
+            
             buff = Console.ReadLine();
             b = Convert.ToInt16(buff);
             Console.WriteLine("b: " + b);
             //TODO: Написать ввод третьего значения d;
             //TODO: Вывести сумму трех значений;
+            
 
             int c = a;
             a = b;
@@ -41,9 +44,34 @@ namespace HelloWorld
             double x = 1 + 0.5;
             Console.WriteLine(x);
 
+            //вызов функции
+            c = y(4);
+            Console.WriteLine("Y_const = " + c);
 
+            //циклы
+            for (int i = -10; i < 10; i++)
+            {
+                Console.WriteLine("Y = " + y(i));
+            }
             Console.ReadKey();
         }
-        
+
+        static int y (int x)
+        {
+            return x + 2;
+        }
+        static int y (int x)
+        {
+            return 2 * x + 4;
+        }
+        static int y (int x)
+        {
+            return -3 * x -5;
+        }
+        static int y (int x)
+        {
+            return -8 * x + 1;
+        }
+
     }
 }
