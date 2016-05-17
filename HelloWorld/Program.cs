@@ -60,15 +60,15 @@ namespace HelloWorld
         {
             return x + 2;
         }
-        static int y (int x)
+        static int y1 (int x)
         {
             return 2 * x + 4;
         }
-        static int y (int x)
+        static int y2 (int x)
         {
             return -3 * x -5;
         }
-        static int y (int x)
+        static int y3 (int x)
         {
             return -8 * x + 1;
         }
