@@ -59,10 +59,10 @@ namespace HelloWorld
             //циклы
             for (int i = -10; i < 10; i++)
             {
-                Console.WriteLine("Y " + i + " = " + y(i));
-                Console.WriteLine("Y1 " + i + " = " + y1(i));
-                Console.WriteLine("Y2 " + i + " = " + y2(i));
-                Console.WriteLine("Y3 " + i + " = " + y3(i));
+                Console.WriteLine("Y [" + i +  "] = " + y(i));
+                Console.WriteLine("Y1 [" + i + "] = " + y1(i));
+                Console.WriteLine("Y2 [" + i + "] = " + y2(i));
+                Console.WriteLine("Y3 [" + i + "] = " + y3(i));
             }
             Console.ReadKey();
         }
