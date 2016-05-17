@@ -45,7 +45,13 @@ namespace HelloWorld
             Console.WriteLine(x);
 
             //вызов функции
-            c = y(4);
+            c = y(4);   
+            Console.WriteLine("Y_const = " + c);
+            c = y1(1);
+            Console.WriteLine("Y_const = " + c);
+            c = y2(2);
+            Console.WriteLine("Y_const = " + c);
+            c = y3(3);
             Console.WriteLine("Y_const = " + c);
 
             //циклы
