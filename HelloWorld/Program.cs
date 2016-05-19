@@ -36,12 +36,12 @@ namespace HelloWorld
             
 
             int c = a;
-            a = y3;
-            y3 = c;
+            a = b;
+            b = c;
 
             Console.WriteLine("Values: " + a + ", " + b + ";");            
             string str = "TestString";
-            Console.WriteLine(str + (b + y3));
+            Console.WriteLine(str + (b + a));
 
             double x = 1 + 0.5;
             Console.WriteLine(x);
@@ -53,7 +53,7 @@ namespace HelloWorld
             Console.WriteLine("Y1_const = " + c);
             c = y2(4);
             Console.WriteLine("Y2_const = " + c);
-            c = b(4);
+            c = y3(4);
             Console.WriteLine("Y3_const = " + c);
 
             //циклы
