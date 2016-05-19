@@ -22,24 +22,24 @@ namespace HelloWorld
             //сложить а и b
             //сохранить результат в третью переменную
             //вывести результат на экран
-            int a, y3, d;  // Объявление двух переменных
+            int a, b, d;  // Объявление двух переменных
             string buff = Console.ReadLine(); // Создание переменной buff 
                                               // и передача ей значения введенного из консоли
             a = Convert.ToInt16(buff); // Конвертирование строки в инт переменную
             Console.WriteLine("a: " + a); // Вывод значения в консоль
             
             buff = Console.ReadLine();
-            y3 = Convert.ToInt16(buff);
+            b = Convert.ToInt16(buff);
             Console.WriteLine("b: " + y3);
             //TODO: Написать ввод третьего значения d;
             //TODO: Вывести сумму трех значений;
             
 
             int c = a;
-            a = y3;
-            y3 = c;
+            b = y3;
+            b = y3;
 
-            Console.WriteLine("Values: " + a + ", " + y3 + ";");            
+            Console.WriteLine("Values: " + a + ", " + b + ";");            
             string str = "TestString";
             Console.WriteLine(str + (a + y3));
 
@@ -53,7 +53,7 @@ namespace HelloWorld
             Console.WriteLine("Y1_const = " + c);
             c = y2(4);
             Console.WriteLine("Y2_const = " + c);
-            c = y3(4);
+            c = b(4);
             Console.WriteLine("Y3_const = " + c);
 
             //циклы
@@ -62,7 +62,7 @@ namespace HelloWorld
                 Console.WriteLine("Y [" + i +  "] = " + y(i,1,2));
                 Console.WriteLine("Y1 [" + i + "] = " + y1(i));
                 Console.WriteLine("Y2 [" + i + "] = " + y2(i));
-                Console.WriteLine("Y3 [" + i + "] = " + y3(i));
+                Console.WriteLine("Y3 [" + i + "] = " + b(i));
 
             }
             Console.ReadKey();
