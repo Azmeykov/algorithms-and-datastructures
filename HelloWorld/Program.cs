@@ -22,34 +22,34 @@ namespace HelloWorld
             //сложить а и b
             //сохранить результат в третью переменную
             //вывести результат на экран
-            int a, b, d;  // Объявление двух переменных
+            int a, y3, d;  // Объявление двух переменных
             string buff = Console.ReadLine(); // Создание переменной buff 
                                               // и передача ей значения введенного из консоли
             a = Convert.ToInt16(buff); // Конвертирование строки в инт переменную
             Console.WriteLine("a: " + a); // Вывод значения в консоль
             
             buff = Console.ReadLine();
-            b = Convert.ToInt16(buff);
-            Console.WriteLine("b: " + b);
+            y3 = Convert.ToInt16(buff);
+            Console.WriteLine("b: " + y3);
             //TODO: Написать ввод третьего значения d;
             //TODO: Вывести сумму трех значений;
             
 
             int c = a;
-            a = b;
-            b = c;
+            a = y3;
+            y3 = c;
 
-            Console.WriteLine("Values: " + a + ", " + b + ";");            
+            Console.WriteLine("Values: " + a + ", " + y3 + ";");            
             string str = "TestString";
-            Console.WriteLine(str + (a + b));
+            Console.WriteLine(str + (a + y3));
 
             double x = 1 + 0.5;
             Console.WriteLine(x);
 
             //вызов функции
-            c = y(4);   
+            c = y(4,1,2);   
             Console.WriteLine("Y_const = " + c);
-            c = y1(4);
+            c = y1(i);
             Console.WriteLine("Y1_const = " + c);
             c = y2(4);
             Console.WriteLine("Y2_const = " + c);
@@ -62,27 +62,34 @@ namespace HelloWorld
                 Console.WriteLine("Y [" + i +  "] = " + y(i,1,2));
                 Console.WriteLine("Y1 [" + i + "] = " + y1(i));
                 Console.WriteLine("Y2 [" + i + "] = " + y2(i));
-               
+                Console.WriteLine("Y3 [" + i + "] = " + y3(i));
+
             }
             Console.ReadKey();
         }
 
+        private static int y1(int i)
+        {
+            throw new NotImplementedException();
+        }
+
         static int y (int x, int k, int b)
         {
-            return y = k * x + b;
+            return k * x + b;
         }
         static int x (int x)
         {
             return 2 * x + 4;
         }
-        static int k (int x)
+        static int y2 (int x)
         {
             return -3 * x -5;
         }
-        static int b (int x)
+        static int y3 (int x)
         {
             return -8 * x + 1;
         }
+
         
         
 
