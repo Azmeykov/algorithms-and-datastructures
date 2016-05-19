@@ -68,16 +68,13 @@ namespace HelloWorld
             Console.ReadKey();
         }
 
-        private static int y1(int i)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         static int y (int x, int k, int b)
         {
             return k * x + b;
         }
-        static int x (int x)
+        static int y1 (int x)
         {
             return 2 * x + 4;
         }
