@@ -30,18 +30,18 @@ namespace HelloWorld
             
             buff = Console.ReadLine();
             b = Convert.ToInt16(buff);
-            Console.WriteLine("b: " + y3);
+            Console.WriteLine("b: " + b);
             //TODO: Написать ввод третьего значения d;
             //TODO: Вывести сумму трех значений;
             
 
             int c = a;
-            b = y3;
-            b = y3;
+            a = y3;
+            y3 = c;
 
             Console.WriteLine("Values: " + a + ", " + b + ";");            
             string str = "TestString";
-            Console.WriteLine(str + (a + y3));
+            Console.WriteLine(str + (b + y3));
 
             double x = 1 + 0.5;
             Console.WriteLine(x);
