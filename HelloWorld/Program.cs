@@ -59,27 +59,27 @@ namespace HelloWorld
             //циклы
             for (int i = -10; i < 10; i++)
             {
-                Console.WriteLine("Y [" + i +  "] = " + y(i));
+                Console.WriteLine("Y [" + i +  "] = " + y(i,1,2));
                 Console.WriteLine("Y1 [" + i + "] = " + y1(i));
                 Console.WriteLine("Y2 [" + i + "] = " + y2(i));
-                Console.WriteLine("Y3 [" + i + "] = " + y3(i));
+               
             }
             Console.ReadKey();
         }
 
-        static int y (int x)
+        static int y (int x, int k, int b)
         {
-            return x + 2;
+            return y = k * x + b;
         }
-        static int y1 (int x)
+        static int x (int x)
         {
             return 2 * x + 4;
         }
-        static int y2 (int x)
+        static int k (int x)
         {
             return -3 * x -5;
         }
-        static int y3 (int x)
+        static int b (int x)
         {
             return -8 * x + 1;
         }
