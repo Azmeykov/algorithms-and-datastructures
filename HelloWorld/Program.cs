@@ -44,17 +44,17 @@ namespace HelloWorld
             //вызов функции
             
             Console.WriteLine("Y_const = " + y(4, 1, 2));
-            c = y1(i);
-            Console.WriteLine("Y1_const = " + c);
-            c = y2(4);
-            Console.WriteLine("Y2_const = " + c);
-            c = y3(4);
-            Console.WriteLine("Y3_const = " + c);
+            
+            Console.WriteLine("Y1_const = "+ y(4, 1, 2));
+          
+            Console.WriteLine("Y2_const = "+ y(4, 1, 2));
+           
+            Console.WriteLine("Y3_const = "+ y(4, 1, 2));
 
             //циклы
             for (int i = -10; i < 10; i++)
             {
-                Console.WriteLine("Y [" + i +  "] = " + y(i,1,2));
+                Console.WriteLine("Y [" + i +  "] = " + y(4,1,2));
                 Console.WriteLine("Y1 [" + i + "] = " + y1(i));
                 Console.WriteLine("Y2 [" + i + "] = " + y2(i));
                 Console.WriteLine("Y3 [" + i + "] = " + y3(i));
