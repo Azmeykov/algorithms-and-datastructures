@@ -45,11 +45,11 @@ namespace HelloWorld
             
             Console.WriteLine("Y_const = " + y(4, 1, 2));
             
-            Console.WriteLine("Y1_const = "+ y(4, 1, 2));
+            Console.WriteLine("Y1_const = "+ y1(4, 1, 2));
           
-            Console.WriteLine("Y2_const = "+ y(4, 1, 2));
+            Console.WriteLine("Y2_const = "+ y2(4, 1, 2));
            
-            Console.WriteLine("Y3_const = "+ y(4, 1, 2));
+            Console.WriteLine("Y3_const = "+ y3(4, 1, 2));
 
             //циклы
             for (int i = -10; i < 10; i++)
@@ -63,7 +63,21 @@ namespace HelloWorld
             Console.ReadKey();
         }
 
-       
+        private static string y1(int v1, int v2, int v3)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string y2(int v1, int v2, int v3)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static string y3(int v1, int v2, int v3)
+        {
+            throw new NotImplementedException();
+        }
+
         static int y (int x, int k, int b)
         {
             return k * x + b;
