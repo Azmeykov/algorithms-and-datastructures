@@ -42,8 +42,8 @@ namespace HelloWorld
             Console.WriteLine(x);
 
             //вызов функции
-            c = y(4,1,2);   
-            Console.WriteLine("Y_const = " + c);
+            
+            Console.WriteLine("Y_const = " + y(4, 1, 2));
             c = y1(i);
             Console.WriteLine("Y1_const = " + c);
             c = y2(4);
