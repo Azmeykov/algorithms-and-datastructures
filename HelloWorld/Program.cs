@@ -88,7 +88,7 @@ namespace HelloWorld
         }
         static int y2 (int x)
         {
-            return -3 * x -5;
+            return -3 * x -5;  // Функция y2
         }
         static int y3 (int x)
         {
