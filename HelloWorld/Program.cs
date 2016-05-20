@@ -33,12 +33,7 @@ namespace HelloWorld
             Console.WriteLine("b: " + b);
             //TODO: Написать ввод третьего значения d;
             //TODO: Вывести сумму трех значений;
-            
-
-            int c = a;
-            a = b;
-            b = c;
-
+                                
             Console.WriteLine("Values: " + a + ", " + b + ";");            
             string str = "TestString";
             Console.WriteLine(str + (b + a));
@@ -62,14 +57,13 @@ namespace HelloWorld
                 Console.WriteLine("Y [" + i +  "] = " + y(i,1,2));
                 Console.WriteLine("Y1 [" + i + "] = " + y1(i));
                 Console.WriteLine("Y2 [" + i + "] = " + y2(i));
-                Console.WriteLine("Y3 [" + i + "] = " + b(i));
+                Console.WriteLine("Y3 [" + i + "] = " + y3(i));
 
             }
             Console.ReadKey();
         }
 
        
-
         static int y (int x, int k, int b)
         {
             return k * x + b;
@@ -87,8 +81,5 @@ namespace HelloWorld
             return -8 * x + 1;
         }
 
-        
-        
-
-    }
+     }
 }
